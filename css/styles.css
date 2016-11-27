@@ -1,0 +1,22 @@
+jumbotron {
+    background: url('../images/city.jpg') center center no-repeat;
+}
+
+.jumbotron img {
+    opacity: .7;
+}
+
+body {
+    background-image: url('../images/street.jpg');
+}
+
+.brand {
+    color: #c9302c;
+    text-shadow: 1px 1px #080808;
+    font-family: cursive;
+    font-size: 60px;
+}
+
+.contact {
+    color: #c9302c;
+}
