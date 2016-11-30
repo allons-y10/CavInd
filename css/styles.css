@@ -1,13 +1,22 @@
-jumbotron {
-    background: url('../images/city.jpg') center center no-repeat;
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
-.jumbotron img {
-    opacity: .7;
+.jumbotron h1 {
+    text-shadow: 1px 1px #333333;
+}
+
+.jumbotron p {
+    text-shadow: 1px 1px 1px #333333;
+}
+
+.back {
+    background-image: url('../images/arch.jpg');
 }
 
 body {
-    background-image: url('../images/street.jpg');
+
+    color: #c9302c;
 }
 
 .brand {
@@ -19,4 +28,29 @@ body {
 
 .contact {
     color: #c9302c;
+}
+
+.row {
+    padding-bottom: 50px;
+}
+
+.col-md-4 h2 {
+    text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.32);
+}
+.col-md-4 p {
+    font-size: 20px;
+    border-radius: 7px;
+    text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.32);
+
+}
+
+.navbar-default {
+    background-color: rgba(245,245,245,0.65);
+    border-color: #333333;
+    text-align: center;
+}
+
+.navtext {
+    text-align: center;
+    color: #777777;
 }
