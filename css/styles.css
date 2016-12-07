@@ -1,3 +1,10 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
 .jumbotron {
     background-color: rgba(0, 0, 0, 0.0);
 }
@@ -10,13 +17,22 @@
     text-shadow: 1px 1px 1px #333333;
 }
 
-.back {
-    background-image: url('../images/arch.jpg');
+back {
+    background-image: url('../images/skyline.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 body {
 
     color: #c9302c;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url('../images/skyline.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .brand {
