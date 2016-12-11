@@ -25,11 +25,11 @@ back {
 }
 
 body {
-
+    padding-bottom: 70px;
     color: #c9302c;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url('../images/skyline.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/skyline.jpg');
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
