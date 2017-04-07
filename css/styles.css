@@ -17,20 +17,13 @@
     text-shadow: 1px 1px 1px #333333;
 }
 
-back {
-    background-image: url('../images/skyline.jpg');
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 body {
     font-family: 'Lato', sans-serif;
     padding-bottom: 70px;
     color: #c9302c;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.6)), url('../images/skyline.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.72)), url('../images/skyline.jpg');
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -52,6 +45,10 @@ body {
     padding-bottom: 50px;
 }
 
+.col-sm-4 {
+    font-size: 1.3em;
+}
+
 .col-md-4 h2 {
     text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.32);
 }
@@ -59,11 +56,68 @@ body {
     font-size: 20px;
     border-radius: 7px;
     text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.32);
-
 }
 
+/*Detail & summary styling*/
+details {
+    border-radius: 5px;
+    color: #c9302c;
+    margin: 0 0 .4em;
+    padding: 1%;
+}
+
+details[open] {
+    background: #E1E1E1;
+}
+
+summary {
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    margin: -1%;
+    padding: 8px 0;
+    position: relative;
+    width: 102%;
+}
+
+summary:hover,
+details[open]
+summary {
+    background: #E1E1E1;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+summary:before {
+    border-radius: 5px;
+    content: "+";
+    color: #c9302c;
+    display: block;
+    float: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: -6px 10px 0 10px;
+    padding: 0;
+    text-align: center;
+    width: 20px;
+}
+
+details[open]
+summary:before {
+    content: "-";
+    margin-top: -4px;
+}
+
+p {
+    font-size: .8em;
+    margin: 14px 0px 14px 0px;
+}
+/*End details & summary styling*/
+
 .navbar {
-    border: 1px solid rgba(85, 85, 85, 0.48);
+    border: 1px solid #080808;
     background-color: rgba(34, 34, 34, 0.8);
     box-shadow: 1px 1px 5px #080808;
 }
@@ -83,4 +137,22 @@ body {
 .navtext {
     text-align: center;
     color: #777777;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 992px ) {
+    .nav-pills > li {
+        float: none;
+    }
+
+@media screen and (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    summary:before {
+        content: none;
+    }
+}
 }
